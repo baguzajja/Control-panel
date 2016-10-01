@@ -1,0 +1,60 @@
+body {
+	background: #f4f4f4;
+}
+#wrapper {
+	width: 600px;
+	margin: auto;
+	margin-top: 150px;
+	background: transparent;
+	border: 0px solid #ddd;
+	padding: 10px 10px 20px 10px;
+	border-radius: 5px;
+}
+
+#wrapper input {
+	position: block;
+	border-radius: 0;
+	margin-bottom: 15px;
+	width: 300px;
+	font-size: 18px;
+	height: auto;
+}
+#wrapper button {
+	text-align: center;
+	position: block;
+	padding: 10px 30px;
+	width: 300px;
+	border-radius: 0;
+	font-size: 16px;
+}
+
+#header {
+
+	width: 100%;
+	background-color: #ffffff;
+	margin-bottom: 20px;
+}
+
+#header h1 {
+
+	display: -webkit-inline-box;
+	font-size: 25px;
+	text-align: center;
+	margin: 5px;
+}
+
+.logo-tribrata{
+	display: inline;
+	text-align: left;
+	height: 70px;
+	width: auto;
+	float: left;
+}
+
+.logo-polres {
+	display: inline;
+	text-align: right;
+	height: 70px;
+	width: auto;
+	float: right;
+}

@@ -1,0 +1,404 @@
+body {
+	background: #eee;
+}
+.clear {
+	clear: both;
+}
+.overlay {
+	background: rgba(0,0,0,0.2);
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9998;
+	display: none;
+	cursor: pointer;
+}
+.image-preview {
+	padding: 10px;
+	position: fixed;
+	top: 100px;
+	background: #fff;
+	z-index: 9999;
+	
+	display: none;
+}
+.image-preview img {
+}
+.image-preview a {
+	position: absolute;
+    width: 30px;
+    right: -30px;
+    background: #fff;
+    top: 0px;
+    text-align: center;
+    padding: 4px 0;
+}
+
+.notif-wrapper {
+	position: fixed;
+	right: 20px;
+	bottom: 35px;
+	display: none;
+}
+.notif-wrapper .notif {
+	background: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	max-width: 300px;
+	display: block;
+	padding-left: 50px;
+	text-decoration: none;
+}
+.notif-wrapper .notif .fa {
+	font-size: 24px;
+	color: #de3131;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+.notif-wrapper .notif .text {
+	display: block;
+	color: #555;
+}
+.notif-wrapper .notif .client {
+	font-size: 12px;
+	display: block;
+	color: #999;
+}
+nav.navbar {
+	background: #fff;
+}
+nav.navbar a {
+	color: #333 !important;	
+}
+nav.navbar .navbar-brand {
+	width: 300px;
+}
+.navbar-default .navbar-nav a {
+	border-left: 1px solid #eaeaea;
+	border-right-width: 0;
+}
+.navbar-default .navbar-nav a .badge {
+	
+	margin-left: 10px;
+	background: #ff9600;
+	font-weight: normal;
+	padding: 4px 7px;
+	border-radius: 2px;
+	font-size: 11px;
+}
+.navbar-default .navbar-nav a .badge.danger {
+	background: #de3131;
+	color: #fff;
+}
+.navbar-default .navbar-nav .last-child {
+	border-right: 1px solid #eaeaea;
+}
+.navbar-default .navbar-nav a:hover,
+.navbar-default .navbar-nav>.active>a, 
+.navbar-default .navbar-nav>.active>a:focus, 
+.navbar-default .navbar-nav>.active>a:hover {
+	background: #eaeaea;
+	color: #555 !important;
+}
+nav.navbar .navbar-right {
+	margin-right: 1px
+}
+nav.navbar .user-menu {}
+nav.navbar .user-menu img {
+	float: left;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+    border: 1px solid #ccc;
+	
+}
+
+.content-wrapper {
+	/*margin-top: 50px;*/
+	margin-right: 15px;
+	margin-left: 15px;
+}
+.content-wrapper .content {
+	margin: 0 30px 0 15px;
+}
+.content-wrapper .content-body {
+	position: relative;
+}
+.content-wrapper .content-body .sidebar {
+	width: 300px;
+	background: #fff;
+	padding: 15px;
+	position: fixed;
+	left: 0;
+	top: 50px;
+	bottom: 0;
+	overflow: auto;
+}
+.content-wrapper .content-body .sidebar h1 {
+	font-size: 28px;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+}
+.content-wrapper .content-body .sidebar .sidebar-form {}
+.content-wrapper .content-body .sidebar .sidebar-form .input-group {
+	position: relative;
+	width: 100%;
+}
+.content-wrapper .content-body .sidebar .sidebar-form .form-control {
+	border-radius: 0;
+	padding: 20px 10px;
+	border-color: #ddd;
+	background: #f4f4f4;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+}
+.content-wrapper .content-body .sidebar .sidebar-form .input-group .fa {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	z-index: 100;
+	font-size: 16px;
+	color: #ddd;
+}
+.content-wrapper .content-body .sidebar .total {
+	font-size: 12px;
+	color: #aaa;
+	
+	
+	width: 100%;
+	display: block;
+	margin-bottom: 10px;
+	padding-bottom: 5px;
+	
+
+}
+.content-wrapper .content-body .sidebar .sidebar-help {
+	list-style: none;
+	padding-left: 0;
+	border-top: 1px solid #eaeaea;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding: 0 15px;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li {
+	border-bottom: 1px solid #eaeaea;
+	margin-left: -15px;
+	margin-right: -15px;
+	background: #fff;
+	position: relative;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li a {
+	text-decoration: none;
+	display: block;
+	padding: 15px 15px;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li a span {
+	display: block;
+	color: #555;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li a .preview {
+	font-size: 16px;
+	margin-bottom: 3px;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li a .author,
+.content-wrapper .content-body .sidebar .sidebar-help li a .date {
+	font-size: 12px;
+	color: #aaa;
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	-ms-transition: all 0.1s ease;
+	-o-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+.content-wrapper .content-body .sidebar .sidebar-help .new {
+	/*background: #de3131*/
+	background: #fff;
+}
+.content-wrapper .content-body .sidebar .sidebar-help .new a .preview {
+	
+}
+.content-wrapper .content-body .sidebar .sidebar-help .new a .alert-btn {
+	background: #de3131;
+	color: #fff;
+	position: absolute;
+	padding: 2px 5px;
+	font-size: 11px;
+	right: 15px;
+	top: 15px;
+	border-radius: 2px;
+}
+.content-wrapper .content-body .sidebar .sidebar-help .active {
+	background: #E6F2FF;
+	border-left: 5px solid #0c8ce6;
+	font-weight: bold;
+}
+.content-wrapper .content-body .sidebar .sidebar-help .new {
+	border-left: 5px solid #de3131;
+	background: #FCEDED;
+}
+.content-wrapper .content-body .sidebar .sidebar-help .active a .preview {
+	color: #111;
+}
+.content-wrapper .content-body .sidebar .sidebar-help .active a .author,
+.content-wrapper .content-body .sidebar .sidebar-help .active a .date {
+	color: #777;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li a:hover .preview {
+	color: #111;
+}
+.content-wrapper .content-body .sidebar .sidebar-help li a:hover .author,
+.content-wrapper .content-body .sidebar .sidebar-help li a:hover .date {
+	color: #777;
+}
+
+.content-help {
+	margin-left: 315px !important;
+	/*padding-top: 20px;*/
+	padding-right: 0px;
+
+}
+.content-help .help-messages {
+	position: relative;
+	/*max-height: 100vh;
+	min-height: 100%;*/
+	/*overflow: auto;*/
+}
+.content-help .help-messages .message-wrapper {
+	margin-top: 65px;
+	/*padding: 15px 0;*/
+	/*height: 500px;*/
+	overflow: auto;
+}
+.content-help .help-messages .message-wrapper ul {
+	list-style: none;
+	padding-left: 0;
+}
+.content-help .help-messages .message-wrapper ul li {
+	margin-bottom: 10px;
+	position: relative;
+}
+.content-help .help-messages .message-wrapper ul .new {
+	display: none;
+}
+.content-help .help-messages .message-wrapper ul .message {
+	padding: 10px 10px;
+	background: #0c8ce6;
+	color: #fff;
+	float: right;
+	border-radius: 5px;
+	max-width: 80%;
+	margin-right: 15px;
+}
+.content-help .help-messages .message-wrapper ul .message.reply {
+	background: #fff;
+	color: #333;
+	border: 1px solid #ddd;
+	float: left;
+}
+.content-help .help-messages .message-wrapper ul .message p {
+	margin-bottom: 0px;
+}
+.content-help .help-messages .message-wrapper ul .message p img {
+	max-width: 300px;
+	margin-bottom: 5px;
+}
+.content-help .help-messages .message-wrapper ul .message .date {
+	font-size: 11px;
+	color: #A8D7F7;
+	float: right;
+
+}
+.content-help .help-messages .message-wrapper ul .message.reply .date {
+	float: left;
+	color: #999;
+}
+
+.content-help .help-messages .reply-wrapper {
+	background: #fff;
+	padding: 15px 10px 15px 10px;
+	border: 1px solid #ddd;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	left: 15px;
+}
+.content-help .help-messages .reply-wrapper .form-group {
+	width: 100%;
+	
+}
+.content-help .help-messages .reply-wrapper .form-group input {
+	border-radius: 0;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.content-help .help-messages .reply-wrapper .form-group textarea {
+	width: 100%;
+	border-radius: 0;
+	margin-bottom: 10px;
+	padding: 10px;
+	height: 45px;
+}
+.content-help .help-messages .reply-wrapper .form-group .btn {
+	float: right;
+	border-radius: 0;
+	background: #0c8ce6;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 20px 7px 15px;
+}
+.content-help .help-messages .reply-wrapper .form-group .btn i {
+	margin-right: 5px;
+}
+.content-help .help-client {
+	background: #fff;
+	padding: 20px;
+	padding-bottom: 50px;
+	border-radius: 3px;	
+	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+	box-shadow: 0 0 5px 0 rgba(0,0,0,0.1);
+	margin-top: 65px;
+}
+.content-help .help-client h2 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.content-help .help-client ul {
+	padding-left: 0;
+	list-style: none;
+}
+.content-help .help-client ul li {
+	padding: 10px 0;
+	border-bottom: 1px dashed #ccc;
+}
+.content-help .help-client ul li label {
+	display: block;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-style: italic;
+	color: #777;
+	margin-bottom: 0;
+}
+.content-help .help-client ul li span {
+	display: block;
+	font-size: 16px;
+	color: #555;
+}
+.content-help .help-client ul li span img {
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ccc;
+}

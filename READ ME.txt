@@ -1,0 +1,11 @@
+Panic Button Online
+
+Ini salah satu bentuk webcontrol dari panic button dimana disini pada operator dapat mengontrol laporan dari masyarakan yang menggunakan panic button
+
+Untuk proses registrasi dari pihak masyarakat melalui apk akan di tunjukkan melalui url berikut ini : system.php?act=register
+url untuk ngirim message ke server: system.php?act=response_client
+
+yg ngirim ke message help, kritik saran & laporan hanya dibedakan dengan toId. kalo di server namanya grup. kalo diserver grup 0 = help, 1 = kritik saran, 2 = laporan.
+untuk "i am safe" itu berupa message ya mas.
+untuk tampilan (css, js, dsb) masih belum fixed. tinggal di percantik lagi.
+tapi dari sisi komunikasinya insyaAllah udah.
