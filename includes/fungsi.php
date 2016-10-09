@@ -1,4 +1,4 @@
-</<?php
+<?php
 function create_client($id, $ktp, $nama, $alamat, $notelp){
 	global $con;
 	$res = $con->query("INSERT INTO client VALUES ('$id', $ktp, '$nama', '$alamat', '$notelp')");
